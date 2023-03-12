@@ -18,7 +18,7 @@ input[type=radio] {
 }
 
 .container{
-    margin: 1vh 0vh;
+    margin: 1vh 0vh 50vh 0vh;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -93,3 +93,21 @@ input[type=radio] {
 .container{
     cursor: pointer;
 }
+
+@media screen and (max-width: 320px) {
+img{
+width: 65%;
+}
+.div_img, img{
+margin:0 auto;
+}
+}
+
+@media screen and (max-width: 820px) {
+    img{
+    width: 75%;
+    }
+    .div_img, img{
+        margin:0 auto;
+        }
+    }
