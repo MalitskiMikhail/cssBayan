@@ -1,0 +1,88 @@
+body, html {
+    margin: 0px;
+    padding: 0px;
+    background-color: #d8e4e2;
+}
+
+.wrapper{
+    margin: 0 auto;
+    width: 1024px;
+}
+
+.h1{
+    text-align: center;
+}
+
+input[type=radio] {
+     display: none;
+}
+
+.container{
+     margin: 1vh 0vh;
+}
+
+.container .div_img {
+     margin: 0 auto;
+     height: 0;
+     font-family: arial;
+     color: rgba(0, 0, 0, 0);
+     line-height: 18px;
+     padding: 0 30px;
+     box-sizing: border-box;
+     transition: color 0.5s, padding 0.5s;
+     overflow: hidden;
+     font-size: 16px;
+}
+
+.div_img{
+    transform: scale(0.1);
+}
+
+.div_img :checked {
+    transition: 0.7s;
+    transform: scale(0.1);
+}
+
+.container label {
+    cursor: pointer;
+    display: block;
+    padding: 15px 20px;
+    width: 100%;
+    color: #008cff;
+    font-weight: 300;
+    box-sizing: border-box;
+    z-index: 100;
+    font-family: Verdana, sans-serif;
+    font-size: 18px;
+    margin: 0 0 5px;
+    transition: color .5s;
+}
+
+.container label:hover {
+    color: rgb(47, 42, 213);
+}
+
+.container input:checked + label {
+    color: rgb(0, 16, 118);
+}
+
+.container input:checked{
+    transform: scale(1);
+    transition: .5s;
+}
+
+.container input:checked + label + .div_img {
+    height: auto;
+    margin-top: -5px;
+    color: rgb(7, 0, 111);
+    padding: 20px 30px 10px;
+}
+
+.container input:hover + label + .div_img {
+    height: auto;
+    margin-top: -5px;
+    color: rgb(7, 0, 111);
+    padding: 20px 30px 10px;
+    transform: scale(1, 1);
+    transition: .7s;
+}
